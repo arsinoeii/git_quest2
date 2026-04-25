@@ -2,6 +2,6 @@ package com.questboard.widget
 
 data class TaskData(
     val title: String,
-    val deadline: String?,
+    val pageId: String,
     val notionUrl: String
 )

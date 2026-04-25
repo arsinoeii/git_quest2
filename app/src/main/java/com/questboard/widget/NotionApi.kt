@@ -48,13 +48,10 @@ object NotionApi {
             }
             if (title.isBlank()) continue
 
-            val deadlineObj = props.optJSONObject("Deadline")?.optJSONObject("date")
-            val deadline = deadlineObj?.optString("start")
+            val pageId = page.getString("id")
+            val notionUrl = "https://notion.so/${pageId.replace("-", "")}"
 
-            val pageId = page.getString("id").replace("-", "")
-            val notionUrl = "https://notion.so/$pageId"
-
-            tasks.add(TaskData(title, deadline, notionUrl))
+            tasks.add(TaskData(title, pageId, notionUrl))
         }
 
         return tasks

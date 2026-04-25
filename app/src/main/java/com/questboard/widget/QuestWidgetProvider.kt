@@ -69,12 +69,7 @@ class QuestWidgetProvider : AppWidgetProvider() {
 
                 for (i in TASK_IDS.indices) {
                     if (i < tasks.size) {
-                        val label = if (tasks[i].deadline != null) {
-                            "${tasks[i].title}\n${formatDeadline(tasks[i].deadline!!)}"
-                        } else {
-                            tasks[i].title
-                        }
-                        views.setTextViewText(TASK_IDS[i], label)
+                        views.setTextViewText(TASK_IDS[i], tasks[i].title)
                         views.setViewVisibility(TASK_IDS[i], View.VISIBLE)
 
                         val openIntent = Intent(Intent.ACTION_VIEW, Uri.parse(tasks[i].notionUrl))

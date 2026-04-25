@@ -30,12 +30,7 @@ class TaskListRemoteViewsFactory(
         val rv = RemoteViews(context.packageName, R.layout.widget_item)
         rv.setTextViewText(R.id.task_title, task.title)
 
-        if (task.deadline != null) {
-            rv.setViewVisibility(R.id.task_deadline, View.VISIBLE)
-            rv.setTextViewText(R.id.task_deadline, formatDeadline(task.deadline))
-        } else {
-            rv.setViewVisibility(R.id.task_deadline, View.GONE)
-        }
+        rv.setViewVisibility(R.id.task_deadline, View.GONE)
 
         val fillIntent = Intent().apply {
             data = Uri.parse(task.notionUrl)
