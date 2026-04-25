@@ -18,6 +18,12 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".TaskActionActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:excludeFromRecents="true" />
+
         <receiver
             android:name="com.questboard.widget.QuestWidgetProvider"
             android:exported="true">

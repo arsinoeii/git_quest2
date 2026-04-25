@@ -56,4 +56,6 @@ object NotionApi {
 
         return tasks
     }
+
+    fun markTaskDone(pageId: String) { /* stub — implemented in Task 6 */ }
 }
