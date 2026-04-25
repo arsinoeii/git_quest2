@@ -18,8 +18,8 @@ android {
         applicationId = "com.questboard.widget"
         minSdk = 26
         targetSdk = 34
-        versionCode = 2
-        versionName = "1.1"
+        versionCode = 3
+        versionName = "2.0"
 
         buildConfigField("String", "NOTION_TOKEN", "\"${localProps["notion.token"]}\"")
         buildConfigField("String", "NOTION_DATABASE_ID", "\"${localProps["notion.database_id"]}\"")
