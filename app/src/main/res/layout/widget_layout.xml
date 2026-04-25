@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_background"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:id="@+id/header_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="Today"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/refresh_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="⟳"
+            android:textColor="#99FFFFFF"
+            android:textSize="18sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="4dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33FFFFFF" />
+
+    <TextView android:id="@+id/task1" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="4dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
+    <TextView android:id="@+id/task2" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="3dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
+    <TextView android:id="@+id/task3" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="3dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
+    <TextView android:id="@+id/task4" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="3dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
+    <TextView android:id="@+id/task5" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="3dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
+    <TextView android:id="@+id/task6" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="3dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
+    <TextView android:id="@+id/task7" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="3dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
+    <TextView android:id="@+id/task8" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="3dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Tap ⟳ to sync"
+        android:textColor="#99FFFFFF"
+        android:textSize="12sp" />
+
+</LinearLayout>
