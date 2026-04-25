@@ -24,6 +24,7 @@ android {
         buildConfigField("String", "NOTION_TOKEN", "\"${localProps["notion.token"]}\"")
         buildConfigField("String", "NOTION_DATABASE_ID", "\"${localProps["notion.database_id"]}\"")
         buildConfigField("String", "NOTION_STATUS_VALUE", "\"${localProps["notion.status_value"]}\"")
+        buildConfigField("String", "NOTION_GOALS_DATABASE_ID", "\"${localProps["notion.goals_database_id"]}\"")
     }
 
     buildFeatures {
