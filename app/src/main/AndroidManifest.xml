@@ -27,6 +27,9 @@
             <intent-filter>
                 <action android:name="com.questboard.widget.ACTION_REFRESH" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="com.questboard.widget.ACTION_PAGE_NEXT" />
+            </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/quest_widget_info" />
