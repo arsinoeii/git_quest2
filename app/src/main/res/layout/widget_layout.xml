@@ -1,55 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/widget_background"
-    android:padding="12dp">
+    android:background="@drawable/gradient_0"
+    android:padding="10dp">
 
     <LinearLayout
         android:id="@+id/header_area"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="6dp">
+        android:gravity="center_vertical"
+        android:paddingBottom="4dp">
 
         <TextView
             android:id="@+id/widget_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_gravity="center_vertical"
+            android:gravity="center"
             android:text="Today"
             android:textColor="#FFFFFF"
-            android:textSize="14sp"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/refresh_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
             android:text="⟳"
             android:textColor="#99FFFFFF"
-            android:textSize="18sp"
-            android:paddingStart="8dp"
-            android:paddingEnd="4dp" />
+            android:textSize="16sp"
+            android:paddingStart="6dp"
+            android:paddingEnd="2dp" />
 
     </LinearLayout>
 
-    <TextView
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#33FFFFFF" />
+        android:layout_height="3dp"
+        android:layout_marginBottom="4dp"
+        android:max="100"
+        android:progress="0"
+        android:progressBackgroundTint="#22FFFFFF"
+        android:progressTint="#e94560" />
 
-    <TextView android:id="@+id/task1" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="4dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
-    <TextView android:id="@+id/task2" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="3dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
-    <TextView android:id="@+id/task3" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="3dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
-    <TextView android:id="@+id/task4" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="3dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
-    <TextView android:id="@+id/task5" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="3dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
-    <TextView android:id="@+id/task6" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="3dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
-    <TextView android:id="@+id/task7" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="3dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
-    <TextView android:id="@+id/task8" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/item_background" android:padding="8dp" android:layout_marginTop="3dp" android:textColor="#FFFFFF" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" android:visibility="gone" />
+    <TextView
+        android:id="@+id/task1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_background"
+        android:padding="7dp"
+        android:layout_marginBottom="3dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/task2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_background"
+        android:padding="7dp"
+        android:layout_marginBottom="3dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/task3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_background"
+        android:padding="7dp"
+        android:layout_marginBottom="3dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/status_text"
@@ -59,6 +96,33 @@
         android:gravity="center"
         android:text="Tap ⟳ to sync"
         android:textColor="#99FFFFFF"
-        android:textSize="12sp" />
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#99FFFFFF"
+            android:textSize="18sp"
+            android:paddingEnd="8dp" />
+
+        <TextView
+            android:id="@+id/page_dots"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
 
 </LinearLayout>

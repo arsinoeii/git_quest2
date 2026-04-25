@@ -16,8 +16,7 @@ class QuestWidgetProvider : AppWidgetProvider() {
         const val ACTION_REFRESH = "com.questboard.widget.ACTION_REFRESH"
 
         private val TASK_IDS = intArrayOf(
-            R.id.task1, R.id.task2, R.id.task3, R.id.task4,
-            R.id.task5, R.id.task6, R.id.task7, R.id.task8
+            R.id.task1, R.id.task2, R.id.task3
         )
     }
 
