@@ -43,6 +43,9 @@
             <intent-filter>
                 <action android:name="com.questboard.widget.ACTION_PAGE_NEXT" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="com.questboard.widget.ACTION_PAGE_PREV" />
+            </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/quest_widget_info" />

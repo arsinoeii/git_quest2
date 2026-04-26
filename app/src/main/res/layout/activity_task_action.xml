@@ -3,7 +3,7 @@
     android:id="@+id/overlay_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#66000000">
+    android:background="#33000000">
 
     <LinearLayout
         android:id="@+id/card"
@@ -18,7 +18,7 @@
             android:id="@+id/task_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#FFFFFF"
+            android:textColor="#3a4830"
             android:textSize="14sp"
             android:textStyle="bold"
             android:maxLines="1"
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Open ↗"
-                android:textColor="#CCFFFFFF"
+                android:textColor="#6a5a3a"
                 android:textSize="12sp"
                 android:background="@drawable/pill_muted"
                 android:paddingStart="16dp"

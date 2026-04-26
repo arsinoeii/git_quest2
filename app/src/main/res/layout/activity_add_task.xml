@@ -3,13 +3,12 @@
     android:id="@+id/overlay_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#66000000">
+    android:background="#33000000">
 
     <ScrollView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:maxHeight="500dp">
+        android:layout_gravity="center">
 
         <LinearLayout
             android:id="@+id/card"
@@ -17,19 +16,19 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@drawable/overlay_card_bg"
-            android:padding="18dp">
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="New task"
-                android:textColor="#FFFFFF"
+                android:textColor="#3a4830"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="14dp" />
+                android:layout_marginBottom="12dp" />
 
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="TITLE" android:textColor="#66FFFFFF" android:textSize="9sp"
+                android:text="TITLE" android:textColor="#886a5a3a" android:textSize="9sp"
                 android:letterSpacing="0.05" android:layout_marginBottom="3dp" />
             <EditText
                 android:id="@+id/input_title"
@@ -37,37 +36,47 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/input_bg"
                 android:padding="9dp"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#44FFFFFF"
+                android:textColor="#3a4830"
+                android:textColorHint="#886a5a3a"
                 android:textSize="13sp"
                 android:hint="What do you need to do?"
                 android:inputType="textCapSentences"
                 android:maxLines="1"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="8dp" />
 
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="PHASE" android:textColor="#66FFFFFF" android:textSize="9sp"
+                android:text="PHASE" android:textColor="#886a5a3a" android:textSize="9sp"
                 android:letterSpacing="0.05" android:layout_marginBottom="3dp" />
             <LinearLayout android:id="@+id/chips_phase"
                 android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:orientation="horizontal" android:layout_marginBottom="10dp" />
+                android:orientation="horizontal" android:layout_marginBottom="4dp" />
+            <LinearLayout android:id="@+id/chips_phase_row2"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="8dp" />
 
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="STATUS" android:textColor="#66FFFFFF" android:textSize="9sp"
+            <TextView android:id="@+id/label_status"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="STATUS" android:textColor="#886a5a3a" android:textSize="9sp"
                 android:letterSpacing="0.05" android:layout_marginBottom="3dp" />
             <LinearLayout android:id="@+id/chips_status"
                 android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:orientation="horizontal" android:layout_marginBottom="10dp" />
+                android:orientation="horizontal" android:layout_marginBottom="8dp" />
 
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="LIFE AREA" android:textColor="#66FFFFFF" android:textSize="9sp"
+                android:text="LIFE AREA" android:textColor="#886a5a3a" android:textSize="9sp"
                 android:letterSpacing="0.05" android:layout_marginBottom="3dp" />
             <LinearLayout android:id="@+id/chips_life_area"
                 android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:orientation="horizontal" android:layout_marginBottom="10dp" />
+                android:orientation="horizontal" android:layout_marginBottom="4dp" />
+            <LinearLayout android:id="@+id/chips_life_area_row2"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="4dp" />
+            <LinearLayout android:id="@+id/chips_life_area_row3"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="8dp" />
 
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="DEADLINE" android:textColor="#66FFFFFF" android:textSize="9sp"
+                android:text="DEADLINE" android:textColor="#886a5a3a" android:textSize="9sp"
                 android:letterSpacing="0.05" android:layout_marginBottom="3dp" />
             <TextView
                 android:id="@+id/input_deadline"
@@ -75,14 +84,13 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/input_bg"
                 android:padding="9dp"
-                android:textColor="#FFFFFF"
+                android:textColor="#886a5a3a"
                 android:textSize="13sp"
                 android:text="Tap to set"
-                android:textColorHint="#44FFFFFF"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="8dp" />
 
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:text="GOAL" android:textColor="#66FFFFFF" android:textSize="9sp"
+                android:text="GOAL" android:textColor="#886a5a3a" android:textSize="9sp"
                 android:letterSpacing="0.05" android:layout_marginBottom="3dp" />
             <TextView
                 android:id="@+id/input_goal"
@@ -90,11 +98,10 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/input_bg"
                 android:padding="9dp"
-                android:textColor="#FFFFFF"
+                android:textColor="#886a5a3a"
                 android:textSize="13sp"
                 android:text="Tap to select"
-                android:textColorHint="#44FFFFFF"
-                android:layout_marginBottom="14dp" />
+                android:layout_marginBottom="12dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -108,7 +115,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Cancel"
-                    android:textColor="#AAFFFFFF"
+                    android:textColor="#6a5a3a"
                     android:textSize="13sp"
                     android:background="@drawable/pill_muted"
                     android:padding="10dp"
