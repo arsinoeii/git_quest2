@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quest Widget</string>
+    <string name="widget_title">Today</string>
+    <string name="widget_description">Shows your Today tasks from the Quest Board</string>
+    <string name="refresh_description">Refresh tasks</string>
+    <string name="empty_text">Nothing committed for today</string>
+</resources>
